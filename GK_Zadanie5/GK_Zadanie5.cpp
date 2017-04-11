@@ -236,14 +236,15 @@ int button_x, button_y;
 GLfloat scale = 1.0;
 
 // właściwości materiału - domyślnie mosiądz
-
+//////////////////////////////////////////////////////////////////////////////////////////////
+//Tu ustala się kolor
 const GLfloat *ambient = GoldAmbient;
 const GLfloat *diffuse = GoldDiffuse;
 const GLfloat *specular = GoldSpecular;
 GLfloat shininess = GoldShininess;
 
 
-/////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
 
 
 GLfloat light_position[4] =
@@ -588,6 +589,8 @@ void Display()
 		//}
 
 	{
+		///////////////////////////////////////////////////////////////////////////////////////////////
+		//tu się ustala podstawę ostrosłupa
 		GLint n = 5;
 		GLTVector3 vNormal;
 		GLTVector3 vCorners[12] =
